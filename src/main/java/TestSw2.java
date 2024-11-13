@@ -5,7 +5,7 @@ public class TestSw2 extends JFrame {
     public TestSw2() {
 
         //Frame
-        setTitle("Swing Example");
+        setTitle("Swing Example2");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(500, 300); //Frame size setting
         setLocationRelativeTo(null); //시작시 화면이 뜰 위치 중앙
