@@ -38,6 +38,13 @@ public class TestSw extends JFrame {
         cp.add(lion);
         cp.add(rabbit);
 
+        //JRadioButton
+        JRadioButton red = new JRadioButton("Red");
+        JRadioButton orange = new JRadioButton("Orange");
+        JRadioButton yellow = new JRadioButton("Yellow");
+        cp.add(red);
+        cp.add(orange);
+        cp.add(yellow);
 
 
         setVisible(true); //Frame 출력
