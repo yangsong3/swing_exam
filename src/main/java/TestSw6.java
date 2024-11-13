@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
 
 public class TestSw6 extends JFrame {
     public TestSw6() {
@@ -27,9 +28,24 @@ public class TestSw6 extends JFrame {
 
         JTable table = new JTable(data, columNames); // 데이터와 열 이름을 사용해 테이블 생성
         JScrollPane scrollPane = new JScrollPane(table);
-
         cp.add(scrollPane, BorderLayout.CENTER);
 
+        //JMenuBar, JMenu, JMenuItem, ToolTip
+        JMenuBar menuBar = new JMenuBar();
+
+        JMenu fileMenu = new JMenu("File");
+        fileMenu.setToolTipText("File operations");
+
+        JMenuItem openItem = new JMenuItem("Open");
+        openItem.setToolTipText("Open");
+        JMenuItem exitItem = new JMenuItem("Exit");
+        exitItem.setToolTipText("Exit");
+
+        fileMenu.add(openItem);
+        fileMenu.add(exitItem);
+        menuBar.add(fileMenu);
+
+        setJMenuBar(menuBar);
 
         setVisible(true); //Frame 출력
 
