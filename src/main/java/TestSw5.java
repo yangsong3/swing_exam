@@ -17,14 +17,20 @@ public class TestSw5 extends JFrame {
         //Layout
         cp.setLayout(new FlowLayout());
 
-        //버튼을 눌러 Dialog 표시
+        //버튼을 눌러 JFileChooser 표시
         JButton showFileChooserButton = new JButton("Open File Chooser");
         showFileChooserButton.addActionListener(e -> showFileChooser(this)); //버튼 클릭시 다이얼로그 표시
 
         cp.add(showFileChooserButton);
 
-        setVisible(true); //Frame 출력
+        //버튼을 눌러 JColorChooser 표시
+        JButton showColorChooserButton = new JButton("Open Color Chooser");
+        showColorChooserButton.addActionListener(e -> showColorChooser(this));
 
+        cp.add(showColorChooserButton);
+
+
+        setVisible(true); //Frame 출력
     }
 
     private void showFileChooser(JFrame frame) {
@@ -37,6 +43,16 @@ public class TestSw5 extends JFrame {
             JOptionPane.showMessageDialog(this, "Selected file: " + selectedFile.getAbsolutePath());
             // 선택된 파일 경로를 메세지로 표시
 
+        }
+
+    }
+
+    private void showColorChooser(JFrame frame) {
+        //JColorChooser
+        Color selectedColor = JColorChooser.showDialog(this, "Choose a Color", Color.white);
+
+        if (selectedColor != null) {
+            getContentPane().setBackground(selectedColor);
         }
 
     }
