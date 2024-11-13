@@ -65,6 +65,15 @@ public class TestSw extends JFrame {
         cp.add(colorCombo);
         cp.add(fruitCombo);
 
+        //JList
+        String[] planet = {"Earth", "Mars", "Jupiter", "Saturn", "Uranus"};
+
+        JList<String> strplist = new JList<>(planet);
+        JList plist = new JList<>(planet);
+
+        cp.add(new JScrollPane(strplist));
+        cp.add(plist);
+
         setVisible(true); //Frame 출력
 
     }
