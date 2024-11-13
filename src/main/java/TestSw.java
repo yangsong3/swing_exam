@@ -55,6 +55,15 @@ public class TestSw extends JFrame {
         cp.add(orange);
         cp.add(yellow);
 
+        //JComboBox
+        String[] colors = {"red", "orange", "yellow", "green", "blue" , "navy", "purple"};
+        String[] fruits = {"Apple", "Melon", "Peach", "Grape"};
+
+        JComboBox colorCombo = new JComboBox(colors);
+        JComboBox fruitCombo = new JComboBox(fruits);
+
+        cp.add(colorCombo);
+        cp.add(fruitCombo);
 
         setVisible(true); //Frame 출력
 
