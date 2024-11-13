@@ -39,9 +39,18 @@ public class TestSw extends JFrame {
         cp.add(rabbit);
 
         //JRadioButton
+        JLabel colorLabel = new JLabel("색상을 선택해 주세요 : ");
+        cp.add(colorLabel);
+
+        ButtonGroup group = new ButtonGroup();
         JRadioButton red = new JRadioButton("Red");
         JRadioButton orange = new JRadioButton("Orange");
         JRadioButton yellow = new JRadioButton("Yellow");
+
+        group.add(red);
+        group.add(orange);
+        group.add(yellow);
+
         cp.add(red);
         cp.add(orange);
         cp.add(yellow);
