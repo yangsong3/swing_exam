@@ -23,8 +23,16 @@ public class TestSw extends JFrame {
 
         //JButton
         JButton jButton = new JButton("Button test");
-        jButton.setBounds(200, 200,100,20);
+        jButton.setBounds(120, 130,100,20);
         cp.add(jButton);
+
+        //JTextField
+        JTextField jTextField = new JTextField();
+        jTextField.setBounds(200, 200, 100, 25);
+        jTextField.setColumns(10);
+        cp.add(jTextField);
+
+
 
         setVisible(true); //Frame 출력
 
