@@ -26,6 +26,24 @@ public class TestSw3 extends JFrame {
         getContentPane().add(slider, BorderLayout.CENTER);
         cp.setVisible(true);
 
+        //JTabbedPane
+        JTabbedPane jTabbedPane = new JTabbedPane();
+        JPanel tab1 = new JPanel(new BorderLayout()); // Tab1 Panel 생성
+        JPanel tab2 = new JPanel();
+        JPanel tab3 = new JPanel();
+
+        tab1.add(new JLabel("Tab 1",JLabel.CENTER), BorderLayout.CENTER);
+        tab2.add(new JLabel("Tab 2", JLabel.CENTER),BorderLayout.CENTER);
+        tab3.add(new JLabel("Tab 3", JLabel.CENTER),BorderLayout.CENTER);
+
+        jTabbedPane.addTab("Tab 1", tab1);
+        jTabbedPane.addTab("Tab 2", tab2);
+        jTabbedPane.addTab("Tab 3", tab3);
+
+        jTabbedPane.setPreferredSize(new Dimension(400, 300));
+        getContentPane().add(jTabbedPane, BorderLayout.CENTER);
+        cp.setVisible(true);
+
         setVisible(true); //Frame 출력
 
     }
