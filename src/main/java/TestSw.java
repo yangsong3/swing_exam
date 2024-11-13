@@ -21,6 +21,11 @@ public class TestSw extends JFrame {
         jLabel.setBounds(100,100,100,10);
         cp.add(jLabel);
 
+        //JButton
+        JButton jButton = new JButton("Button test");
+        jButton.setBounds(200, 200,100,20);
+        cp.add(jButton);
+
         setVisible(true); //Frame 출력
 
     }
